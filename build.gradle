@@ -7,10 +7,13 @@ repositories {
 }
 
 group 'com.bpf.test.pmd'
-version '1.0-SNAPSHOT'
+version '1.0'
 
 sourceCompatibility = 1.8
-targetCompatibility = 1.8
+
+// "11": error, "1.8": no error
+targetCompatibility = 1.11
+
 assert System.properties["java.specification.version"] == "1.8" || "11"
 
 apply plugin: 'pmd'
@@ -25,6 +28,12 @@ pmd {
     ruleSets = []
 }
 
+compileJava.doFirst {
+    println '  JVM vendor:           ' + System.properties['java.vm.vendor']
+    println '  JVM name:             ' + System.properties['java.vm.name']
+    println '  JVM version:          ' + System.properties['java.vm.version']
+    println '  Target Compatibility: ' + "$targetCompatibility"
+}
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
