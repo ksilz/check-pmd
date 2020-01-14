@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  name="Custom Rules"
+  xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+  xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+  <description>
+    Custom rules
+  </description>
+
+  <rule ref="category/java/bestpractices.xml/AvoidPrintStackTrace"/>
+  <rule ref="category/java/bestpractices.xml/DefaultLabelNotLastInSwitchStmt"/>
+  <rule ref="category/java/bestpractices.xml/OneDeclarationPerLine"/>
+  <rule ref="category/java/bestpractices.xml/PositionLiteralsFirstInCaseInsensitiveComparisons"/>
+  <rule ref="category/java/bestpractices.xml/PositionLiteralsFirstInComparisons"/>
+  <rule ref="category/java/codestyle.xml/AvoidProtectedFieldInFinalClass"/>
+  <rule ref="category/java/codestyle.xml/CallSuperInConstructor"/>
+
+  <!--
+   These throw java.lang.IllegalArgumentException with Java 11
+
+  <rule ref="category/java/codestyle.xml/DontImportJavaLang"/>
+  <rule ref="category/java/codestyle.xml/ClassNamingConventions"/>
+  <rule ref="category/java/codestyle.xml/AvoidDollarSigns"/>
+  <rule ref="category/java/bestpractices.xml/AvoidReassigningParameters"/>
+  <rule ref="category/java/bestpractices.xml/PreserveStackTrace"/>
+  <rule ref="category/java/bestpractices.xml/SystemPrintln"/>
+  <rule ref="category/java/bestpractices.xml/UnusedLocalVariable"/>
+  <rule ref="category/java/bestpractices.xml/UnusedPrivateField"/>
+  <rule ref="category/java/bestpractices.xml/SwitchStmtsShouldHaveDefault"/>
+
+  -->
+
+  <!--
+    We have violations here
+
+    <rule ref="category/java/bestpractices.xml/AbstractClassWithoutAbstractMethod"/>
+
+  -->
+
+  <!--
+    <rule ref="category/java/codestyle.xml/ExtendsObject"/>
+    <rule ref="category/java/codestyle.xml/ForLoopsMustUseBraces"/>
+    <rule ref="category/java/codestyle.xml/IfElseStmtsMustUseBraces"/>
+    <rule ref="category/java/codestyle.xml/IfStmtsMustUseBraces"/>
+    <rule ref="category/java/codestyle.xml/MethodNamingConventions"/>
+    <rule ref="category/java/codestyle.xml/NoPackage"/>
+    <rule ref="category/java/codestyle.xml/PackageCase"/>
+    <rule ref="category/java/codestyle.xml/SuspiciousConstantFieldName"/>
+    <rule ref="category/java/codestyle.xml/UnnecessaryFullyQualifiedName"/>
+    <rule ref="category/java/codestyle.xml/WhileLoopsMustUseBraces"/>
+
+    <rule ref="category/java/design.xml/AbstractClassWithoutAnyMethod"/>
+    <rule ref="category/java/design.xml/AvoidThrowingNewInstanceOfSameException"/>
+    <rule ref="category/java/design.xml/AvoidThrowingNullPointerException"/>
+    <rule ref="category/java/design.xml/ClassWithOnlyPrivateConstructorsShouldBeFinal"/>
+    <rule ref="category/java/design.xml/DoNotExtendJavaLangError"/>
+    <rule ref="category/java/design.xml/FinalFieldCouldBeStatic"/>
+    <rule ref="category/java/design.xml/SimplifyConditional"/>
+    <rule ref="category/java/design.xml/UselessOverridingMethod"/>
+
+    <rule ref="category/java/errorprone.xml/AssignmentInOperand"/>
+    <rule ref="category/java/errorprone.xml/AvoidAccessibilityAlteration"/>
+    <rule ref="category/java/errorprone.xml/AvoidAssertAsIdentifier"/>
+    <rule ref="category/java/errorprone.xml/AvoidBranchingStatementAsLastInLoop"/>
+    <rule ref="category/java/errorprone.xml/AvoidEnumAsIdentifier"/>
+    <rule ref="category/java/errorprone.xml/AvoidFieldNameMatchingMethodName"/>
+    <rule ref="category/java/errorprone.xml/AvoidFieldNameMatchingTypeName"/>
+    <rule ref="category/java/errorprone.xml/AvoidInstanceofChecksInCatchClause"/>
+    <rule ref="category/java/errorprone.xml/AvoidLosingExceptionInformation"/>
+    <rule ref="category/java/errorprone.xml/AvoidMultipleUnaryOperators"/>
+    <rule ref="category/java/errorprone.xml/BadComparison"/>
+    <rule ref="category/java/errorprone.xml/BrokenNullCheck"/>
+    <rule ref="category/java/errorprone.xml/ClassCastExceptionWithToArray"/>
+    <rule ref="category/java/errorprone.xml/CompareObjectsWithEquals"/>
+    <rule ref="category/java/errorprone.xml/DoNotExtendJavaLangThrowable"/>
+    <rule ref="category/java/errorprone.xml/DontImportSun"/>
+    <rule ref="category/java/errorprone.xml/DontUseFloatTypeForLoopIndices"/>
+    <rule ref="category/java/errorprone.xml/EmptyCatchBlock"/>
+    <rule ref="category/java/errorprone.xml/EmptyFinalizer"/>
+    <rule ref="category/java/errorprone.xml/EmptyFinallyBlock"/>
+    <rule ref="category/java/errorprone.xml/EmptyIfStmt"/>
+    <rule ref="category/java/errorprone.xml/EmptyInitializer"/>
+    <rule ref="category/java/errorprone.xml/EmptyStatementBlock"/>
+    <rule ref="category/java/errorprone.xml/EmptyStatementNotInLoop"/>
+    <rule ref="category/java/errorprone.xml/EmptySwitchStatements"/>
+    <rule ref="category/java/errorprone.xml/EmptySynchronizedBlock"/>
+    <rule ref="category/java/errorprone.xml/EmptyTryBlock"/>
+    <rule ref="category/java/errorprone.xml/EmptyWhileStmt"/>
+    <rule ref="category/java/errorprone.xml/EqualsNull"/>
+    <rule ref="category/java/errorprone.xml/FinalizeDoesNotCallSuperFinalize"/>
+    <rule ref="category/java/errorprone.xml/FinalizeOnlyCallsSuperFinalize"/>
+    <rule ref="category/java/errorprone.xml/FinalizeOverloaded"/>
+    <rule ref="category/java/errorprone.xml/FinalizeShouldBeProtected"/>
+    <rule ref="category/java/errorprone.xml/IdempotentOperations"/>
+    <rule ref="category/java/errorprone.xml/InvalidSlf4jMessageFormat"/>
+    <rule ref="category/java/errorprone.xml/JumbledIncrementer"/>
+    <rule ref="category/java/errorprone.xml/LoggerIsNotStaticFinal"/>
+    <rule ref="category/java/errorprone.xml/MethodWithSameNameAsEnclosingClass"/>
+    <rule ref="category/java/errorprone.xml/MisplacedNullCheck"/>
+    <rule ref="category/java/errorprone.xml/MissingBreakInSwitch"/>
+    <rule ref="category/java/errorprone.xml/MissingStaticMethodInNonInstantiatableClass"/>
+    <rule ref="category/java/errorprone.xml/MoreThanOneLogger"/>
+    <rule ref="category/java/errorprone.xml/NonCaseLabelInSwitchStatement"/>
+    <rule ref="category/java/errorprone.xml/NonStaticInitializer"/>
+    <rule ref="category/java/errorprone.xml/OverrideBothEqualsAndHashcode"/>
+    <rule ref="category/java/errorprone.xml/ProperLogger">
+      <properties>
+        <property name="staticLoggerName">
+          <value>LOGGER</value>
+        </property>
+      </properties>
+    </rule>
+    <rule ref="category/java/errorprone.xml/ReturnFromFinallyBlock"/>
+    <rule ref="category/java/errorprone.xml/SingletonClassReturningNewInstance"/>
+    <rule ref="category/java/errorprone.xml/StringBufferInstantiationWithChar"/>
+    <rule ref="category/java/errorprone.xml/SuspiciousEqualsMethodName"/>
+    <rule ref="category/java/errorprone.xml/SuspiciousHashcodeMethodName"/>
+    <rule ref="category/java/errorprone.xml/UnconditionalIfStatement"/>
+    <rule ref="category/java/errorprone.xml/UnnecessaryCaseChange"/>
+    <rule ref="category/java/errorprone.xml/UnusedNullCheckInEquals"/>
+    <rule ref="category/java/errorprone.xml/UseCorrectExceptionLogging"/>
+    <rule ref="category/java/errorprone.xml/UseEqualsToCompareStrings"/>
+    <rule ref="category/java/errorprone.xml/UselessOperationOnImmutable"/>
+
+    <rule ref="category/java/multithreading.xml/AvoidSynchronizedAtMethodLevel"/>
+    <rule ref="category/java/multithreading.xml/DontCallThreadRun"/>
+    <rule ref="category/java/multithreading.xml/UnsynchronizedStaticDateFormatter"/>
+
+    <rule ref="category/java/performance.xml/AvoidFileStream"/>
+    <rule ref="category/java/performance.xml/AvoidUsingShortType"/>
+    <rule ref="category/java/performance.xml/BigIntegerInstantiation"/>
+    <rule ref="category/java/performance.xml/BooleanInstantiation"/>
+    <rule ref="category/java/performance.xml/IntegerInstantiation"/>
+    <rule ref="category/java/performance.xml/LongInstantiation"/>
+    <rule ref="category/java/performance.xml/RedundantFieldInitializer"/>
+    <rule ref="category/java/performance.xml/ShortInstantiation"/>
+    <rule ref="category/java/performance.xml/StringInstantiation"/>
+    <rule ref="category/java/performance.xml/StringToString"/>
+    <rule ref="category/java/performance.xml/UnnecessaryWrapperObjectCreation"/>
+    <rule ref="category/java/performance.xml/UselessStringValueOf"/>
+  -->
+
+
+</ruleset>
