@@ -12,7 +12,7 @@ version '1.0'
 sourceCompatibility = 1.8
 
 // "11": error, "1.8": no error
-targetCompatibility = 1.11
+targetCompatibility = 11
 
 assert System.properties["java.specification.version"] == "1.8" || "11"
 
@@ -31,7 +31,7 @@ pmd {
 compileJava.doFirst {
     println '  JVM vendor:           ' + System.properties['java.vm.vendor']
     println '  JVM name:             ' + System.properties['java.vm.name']
-    println '  JVM version:          ' + System.properties['java.vm.version']
+    println '  Java version:         ' + System.properties['java.version']
     println '  Target Compatibility: ' + "$targetCompatibility"
 }
 
