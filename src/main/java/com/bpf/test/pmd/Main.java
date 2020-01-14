@@ -1,4 +1,4 @@
-package com.demo;
+package com.bpf.test.pmd;
 
 public class Main {
 
