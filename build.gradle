@@ -19,7 +19,7 @@ assert System.properties["java.specification.version"] == "1.8" || "11"
 apply plugin: 'pmd'
 
 pmd {
-    toolVersion = '6.2.0'
+    toolVersion = '6.20.0'
     consoleOutput = true
     ignoreFailures = false
     sourceSets = [sourceSets.main]
