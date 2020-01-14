@@ -27,14 +27,14 @@
   <rule ref="category/java/codestyle.xml/AvoidDollarSigns"/>
 
   <!--
-    <rule ref="category/java/codestyle.xml/DontImportJavaLang"/>
-    <rule ref="category/java/codestyle.xml/ClassNamingConventions"/>
-    <rule ref="category/java/bestpractices.xml/AvoidReassigningParameters"/>
-    <rule ref="category/java/bestpractices.xml/PreserveStackTrace"/>
-    <rule ref="category/java/bestpractices.xml/UnusedLocalVariable"/>
-    <rule ref="category/java/bestpractices.xml/UnusedPrivateField"/>
-    <rule ref="category/java/bestpractices.xml/SwitchStmtsShouldHaveDefault"/>
-    <rule ref="category/java/bestpractices.xml/SystemPrintln"/>
+  <rule ref="category/java/codestyle.xml/DontImportJavaLang"/>
+  <rule ref="category/java/codestyle.xml/ClassNamingConventions"/>
+  <rule ref="category/java/bestpractices.xml/AvoidReassigningParameters"/>
+  <rule ref="category/java/bestpractices.xml/PreserveStackTrace"/>
+  <rule ref="category/java/bestpractices.xml/UnusedLocalVariable"/>
+  <rule ref="category/java/bestpractices.xml/UnusedPrivateField"/>
+  <rule ref="category/java/bestpractices.xml/SwitchStmtsShouldHaveDefault"/>
+
   -->
 
 </ruleset>
